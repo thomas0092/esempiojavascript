@@ -1,11 +1,7 @@
-
-const moltiplica = (...args) => {
-  if (args.length < 2) {
-    throw new Error('La funzione moltiplica richiede almeno due argomenti');
+const somma = (a, b) => {
+  if (typeof a === 'string' || typeof b === 'string') {
+    console.log('Errore: uno dei due argomenti è una stringa');
+    return 0;
   }
-  return args.reduce((acc, curr) => acc * curr, 1);
+  return a + b;
 };
-
-console.log(moltiplica(2, 3, 4)); 
-console.log(moltiplica(2, 3));    
-console.log(moltiplica(5, 5));    

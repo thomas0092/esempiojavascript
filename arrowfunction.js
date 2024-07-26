@@ -4,6 +4,7 @@ const somma = (a, b) => {
     return 0;
   }
   return a + b;
-  console.log(somma (3, 4));
-  console.log(somma(2, '5'));
+ 
 };
+console.log(somma (3, 4));
+console.log(somma(2, '5'));
